@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".ExclusaoLivroActivity">
+
+
+    <TextView
+        android:id="@+id/text_livro"
+        android:layout_width="406dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Livraria Universo"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_excluir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_excluir"
+        android:layout_width="401dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="Excluir Livro"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_ib"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_livro" />
+
+    <TextView
+        android:id="@+id/text_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="21dp"
+        android:text="IBSN:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_ib"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_excluir" />
+
+    <EditText
+        android:id="@+id/ed_ib"
+        android:layout_width="396dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Digite o IBSN do livro"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/bt_lim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ib" />
+
+    <Button
+        android:id="@+id/bt_deleta"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="58dp"
+        android:text="Excluir"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_lim"
+        app:layout_constraintEnd_toStartOf="@+id/bt_lim"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_lim"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="413dp"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_deleta"
+        app:layout_constraintTop_toBottomOf="@+id/ed_ib" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

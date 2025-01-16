@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".AlteracaoLivroActivity">
+
+    <TextView
+        android:id="@+id/text_livro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Livraria Universo"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_alterar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_alterar"
+        android:layout_width="409dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Atualizar livro, digite o IBSN"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_isbnn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_livro" />
+
+    <TextView
+        android:id="@+id/text_isbnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:text="ISBN:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_titulo"
+        app:layout_constraintStart_toStartOf="@+id/ed_Isbn"
+        app:layout_constraintTop_toBottomOf="@+id/text_alterar" />
+
+    <EditText
+        android:id="@+id/ed_Isbn"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Digite o ISBN"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/ed_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_isbnn" />
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:text="Titulo:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_autor"
+        app:layout_constraintStart_toStartOf="@+id/ed_Isbn"
+        app:layout_constraintTop_toBottomOf="@+id/text_isbnn" />
+
+    <EditText
+        android:id="@+id/ed_titulo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/text_autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo" />
+
+    <TextView
+        android:id="@+id/text_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="Autor:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_editora"
+        app:layout_constraintStart_toStartOf="@+id/ed_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo" />
+
+    <EditText
+        android:id="@+id/ed_autor"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_editora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ed_titulo" />
+
+    <TextView
+        android:id="@+id/text_editora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="Editora:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_descricao"
+        app:layout_constraintStart_toStartOf="@+id/ed_autor"
+        app:layout_constraintTop_toBottomOf="@+id/text_autor" />
+
+    <EditText
+        android:id="@+id/ed_editora"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/ed_descricao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_editora" />
+
+    <TextView
+        android:id="@+id/text_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Descricao:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_descricao"
+        app:layout_constraintStart_toStartOf="@+id/ed_editora"
+        app:layout_constraintTop_toBottomOf="@+id/text_editora" />
+
+    <EditText
+        android:id="@+id/ed_descricao"
+        android:layout_width="348dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/text_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_descricao" />
+
+    <TextView
+        android:id="@+id/text_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="URL para imagem do livro:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_img"
+        app:layout_constraintStart_toStartOf="@+id/ed_descricao"
+        app:layout_constraintTop_toBottomOf="@+id/ed_descricao" />
+
+    <EditText
+        android:id="@+id/ed_img"
+        android:layout_width="354dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/bt_alterar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_img" />
+
+    <Button
+        android:id="@+id/bt_cadast"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="37dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_alterar"
+        app:layout_constraintEnd_toStartOf="@+id/bt_alterar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_alterar" />
+
+    <Button
+        android:id="@+id/bt_alterar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="27dp"
+        android:text="Alterar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_cadast"
+        app:layout_constraintTop_toBottomOf="@+id/ed_img" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
