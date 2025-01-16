@@ -1,13 +1,10 @@
-package com.example.applivraria
+package com.example.applivraria.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.applivraria.databinding.ActivityGerenciamentoLivroBinding
-import com.example.applivraria.databinding.ActivityLoginBinding
 
 class GerenciamentoLivroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGerenciamentoLivroBinding

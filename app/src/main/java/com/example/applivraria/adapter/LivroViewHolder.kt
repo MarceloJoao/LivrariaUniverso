@@ -2,11 +2,10 @@ package com.example.applivraria.adapter
 
 import android.content.Intent
 import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.applivraria.DetalhamentoLivrosActivity
-import com.example.applivraria.Livro
+import com.example.applivraria.ui.DetalhamentoLivrosActivity
+import com.example.applivraria.model.Livro
 import com.example.applivraria.databinding.ItemLivroBinding
 
 class LivroViewHolder(view : View) : RecyclerView.ViewHolder(view){

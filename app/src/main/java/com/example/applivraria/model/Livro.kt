@@ -1,4 +1,4 @@
-package com.example.applivraria
+package com.example.applivraria.model
 
 import java.io.Serializable
 

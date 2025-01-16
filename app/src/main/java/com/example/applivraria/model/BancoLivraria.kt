@@ -1,4 +1,4 @@
-package com.example.applivraria
+package com.example.applivraria.model
 
 import android.content.ContentValues
 import android.content.Context
@@ -88,7 +88,7 @@ class BancoLivraria(contexto : Context) : SQLiteOpenHelper(contexto, Nome, null,
         return array
     }
 
-    fun BuscarporIsbn(isbn: Long): Livro{
+    fun BuscarporIsbn(isbn: Long): Livro {
       val banco = this.readableDatabase
       val cursor = banco.rawQuery("SELECT * FROM livros WHERE isbn=" + isbn, null)
       var livro = Livro()

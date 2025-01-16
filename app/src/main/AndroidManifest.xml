@@ -14,25 +14,25 @@
         android:theme="@style/Theme.AppLivraria"
         tools:targetApi="31">
         <activity
-            android:name=".GerenciamentoLivroActivity"
+            android:name=".ui.GerenciamentoLivroActivity"
             android:exported="false" />
         <activity
-            android:name=".ExclusaoLivroActivity"
+            android:name=".ui.ExclusaoLivroActivity"
             android:exported="false" />
         <activity
-            android:name=".AlteracaoLivroActivity"
+            android:name=".ui.AlteracaoLivroActivity"
             android:exported="false" />
         <activity
-            android:name=".DetalhamentoLivrosActivity"
+            android:name=".ui.DetalhamentoLivrosActivity"
             android:exported="false" />
         <activity
-            android:name=".ListagemLivrosActivity"
+            android:name=".ui.ListagemLivrosActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastroActivity"
+            android:name=".ui.CadastroActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />

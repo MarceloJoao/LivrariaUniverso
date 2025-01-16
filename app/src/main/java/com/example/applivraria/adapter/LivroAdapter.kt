@@ -3,7 +3,7 @@ package com.example.applivraria.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.applivraria.Livro
+import com.example.applivraria.model.Livro
 import com.example.applivraria.R
 
 class LivroAdapter(val livroList: List<Livro>): RecyclerView.Adapter<LivroViewHolder>() {

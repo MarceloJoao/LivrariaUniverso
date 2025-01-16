@@ -1,12 +1,11 @@
-package com.example.applivraria
+package com.example.applivraria.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
 import com.example.applivraria.databinding.ActivityDetalhamentoLivrosBinding
+import com.example.applivraria.model.Livro
 
 class DetalhamentoLivrosActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetalhamentoLivrosBinding
