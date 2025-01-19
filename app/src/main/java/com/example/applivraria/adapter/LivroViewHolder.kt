@@ -17,7 +17,7 @@ class LivroViewHolder(view : View) : RecyclerView.ViewHolder(view){
       Glide.with(binding.imageView.context).load(livro.urlImagem).into(binding.imageView)
 
         itemView.setOnClickListener {
-            val context = binding.imageView.context // Obtendo o contexto
+            val context = binding.imageView.context //obtendo o contexto pela imageView
             val intent = Intent(context, DetalhamentoLivrosActivity::class.java).apply {
                 putExtra("livro", livro) // Passando o objeto Livro
             }
